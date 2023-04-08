@@ -1,2 +1,2 @@
 Duy-Anh: Added README.md and mybinder link 
-Bruce Xu: Completed Q1
+Bruce Xu: Completed repository structure, add tests to readligo.py, create utils.py
