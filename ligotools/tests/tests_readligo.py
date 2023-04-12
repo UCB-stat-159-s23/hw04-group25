@@ -26,3 +26,12 @@ def test_loaddata2():
     
 def test_hdf5():
     assert strain != 0
+    
+def test_hdf52():
+    assert gpsStart != None
+
+
+test_loaddata1()
+test_loaddata2()
+test_hdf5()
+test_hdf52()
