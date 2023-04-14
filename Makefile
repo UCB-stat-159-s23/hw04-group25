@@ -13,7 +13,12 @@ clean:
 	rm -rf _build/html/
 	rm -rf _build
 
-# create a conda environment 
+# create a conda environment. 
+# by default, each line in the markfile will run in a different shell. 
+# The .ONESHELL: command allow us to run all the commands inside an operation in the same shell. 
+.ONESHELL:
+SHELL = /bin/bash
+
 env :
 	source /srv/conda/etc/profile.d/conda.sh
 	conda env create -f environment.yml 
