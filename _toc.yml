@@ -1,0 +1,5 @@
+format: jb-book
+root: contribution_statement
+chapters:
+- file: hw04_description
+- file: LOSC_Event_tutorial
