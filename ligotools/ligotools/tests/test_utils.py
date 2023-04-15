@@ -18,8 +18,8 @@ fn_H1 = event['fn_H1']
 print("!" + fn_H1)
 fn_L1 = event['fn_L1']
 strain_H1, time_H1, chan_dict_H1 = rl.loaddata(
-    'data/'+fn_H1, 'H1')
-strain_L1, time_L1, chan_dict_L1 = rl.loaddata('data/'+fn_L1, 'L1')
+    os.path.join(datadir,fn_H1), 'H1')
+strain_L1, time_L1, chan_dict_L1 = rl.loaddata(os.path.join(datadir,fn_H1), 'L1')
 strain, gpsStart, ts, qmask, shortnameList, injmask, injnameList = \
 rl.read_hdf5(os.path.join(datadir,"H-H1_LOSC_4_V2-1126259446-32.hdf5"))
 
